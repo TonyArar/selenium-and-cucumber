@@ -1,0 +1,24 @@
+# look inside POM.xml to see dependencies for Selenium and Cucumber (as always)
+
+
+
+# install IntelliJ Cucumber and Gherkin plugins
+
+
+
+# CLI command to run Cucumber formatter (reporting) plugins
+# through Cucumber CLI, add arguments to run/debug configuration
+# in IntelliJ, which Cucumber IntelliJ plugin creates
+# general syntax: cucumber --plugin [formatter]:[output-file]
+# for more/other CLI commands/arguments, refer to Cucumber docs
+
+cucumber \
+--plugin json:src/test/java/cucumber/reports/report.json \
+--plugin html:src/test/java/cucumber/reports/report.html
+
+
+
+# Selenium + Cucumber Docs
+
+https://www.selenium.dev/documentation/
+https://cucumber.io/docs
