@@ -29,11 +29,11 @@ public class AdditionStepDefinitions {
     }
 
     @Then("I get {int}")
-    public void thenResultIs(int expected) {
+    public void thenResultIs(int expectedResult) {
         // assert addition produces correct result
-        assertEquals(actualResult, i1+i2);
+        assertEquals(expectedResult, actualResult);
         // print result
-        System.out.println("Gives us: " + expected);
+        System.out.println("Gives us: " + expectedResult);
     }
 
 }
